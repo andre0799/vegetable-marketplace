@@ -8,9 +8,9 @@ interface Props {
 
 export default function ListingCard({ listing }: Props) {
   return (
-    <Card>
-      <Button variant="text" color="inherit" component={NextLinkComposed} to={`listing/${listing.id}`}>
-        <Box p={2}>
+    <Card sx={{ display: 'flex' }}>
+      <Button sx={{ flex: 1 }} variant="text" color="inherit" component={NextLinkComposed} to={`listing/${listing.id}`}>
+        <Box sx={{ flex: 1 }} p={2} >
           <Typography variant="h6">{listing.title}</Typography>
           <Typography variant="body1">{listing.description}</Typography>
         </Box>

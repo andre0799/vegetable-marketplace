@@ -35,13 +35,9 @@ export default function ListingDetail({ listing }: Props) {
         <Typography variant="body1"> Last updated at: {updatedAt.toDateString()}</Typography>
         <Typography variant="body1">Description: {listing.description}</Typography>
       </Box>
-      <Box my={2} display="flex">
-        <Box mr={2}>
-          <Button variant="contained" onClick={submitData}>
-            Order
-          </Button>
-        </Box>
-      </Box>
+      <Button sx={{ m: 2 }} variant="contained" onClick={submitData}>
+      Order
+      </Button>
     </Card>
   )
 }
